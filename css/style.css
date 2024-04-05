@@ -5,3 +5,7 @@ div {
 .navbar {
     font-size: 25px;
 }
+
+.navbar a {
+    margin: 7px;
+}
