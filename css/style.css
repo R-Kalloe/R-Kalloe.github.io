@@ -1,4 +1,7 @@
 div {
     background-color: beige;
-    height: 150px;
+}
+
+.navbar {
+    font-size: 25px;
 }
