@@ -1,11 +1,19 @@
-div {
-    background-color: beige;
+.header {
+  background-color: rgb(241, 168, 168);
 }
 
 .navbar {
-    font-size: 25px;
+  font-size: 25px;
 }
 
 .navbar a {
-    margin: 7px;
+  margin: 7px;
+}
+
+.sm-image {
+  width: 70px;
+}
+
+#sm-hr {
+  width: 120px;
 }
