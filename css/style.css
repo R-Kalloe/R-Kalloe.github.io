@@ -1,19 +1,76 @@
-.header {
-  background-color: rgb(241, 168, 168);
+:root {
+  --background-color-darkblue: rgb(1, 8, 105);
+  --submit-button-background-color: rgb(28, 173, 94);
 }
 
 .navbar {
-  font-size: 25px;
+  background-color: transparent;
+  transition: background-color 0.5s ease; /* CSS-transitie voor achtergrondkleur met 0.5 seconden duur */
+}
+.text-darkblue {
+  color: darkblue;
 }
 
-.navbar a {
-  margin: 7px;
+.text-lightgreen {
+  color: rgb(114, 231, 192);
 }
 
-.sm-image {
-  width: 70px;
+.bg-darkblue {
+  background-color: darkblue;
 }
 
-#sm-hr {
-  width: 120px;
+.bg-lightgreen {
+  background-color: rgb(114, 231, 192);
+}
+
+.btn-hero {
+  padding: 10px;
+  padding-left: 35px;
+  padding-right: 35px;
+}
+
+.border-bottom {
+  border-bottom: 1px solid grey;
+}
+
+.border {
+  border: 2px solid black;
+}
+
+.nav-top {
+  text-align: center;
+}
+
+.service-card-space {
+  height: 10px;
+}
+
+.btn-group a {
+  margin: 10px;
+}
+
+.testimonials-cards {
+  height: 200px;
+  text-align: center;
+}
+
+.bg-darkblue {
+  background-color: var(--background-color-darkblue);
+}
+
+.btn-cta {
+  width: 160px;
+  height: 40px;
+  background-color: transparent;
+  border: 3px solid white;
+  color: white;
+  font-weight: bold;
+  border-radius: 3px;
+}
+
+.form-submit-btn {
+  width: 140px;
+  height: 38px;
+  border-radius: 5px;
+  background-color: var(--submit-button-background-color);
 }
