@@ -1,6 +1,8 @@
 :root {
   --background-color-darkblue: rgb(1, 8, 105);
   --submit-button-background-color: rgb(28, 173, 94);
+  --icon-color-github: rgb(78, 12, 78);
+  --icon-color-instagram: rgb(141, 32, 141);
 }
 
 html {
@@ -15,9 +17,6 @@ html {
   color: darkblue;
 }
 
-.text-lightgreen {
-  color: rgb(114, 231, 192);
-}
 
 .bg-darkblue {
   background-color: darkblue;
@@ -51,6 +50,18 @@ html {
 
 .btn-group a {
   margin: 10px;
+}
+
+.social-icon {
+  font-size: 60px;
+}
+
+.icon-color-github {
+  color: var(--icon-color-github);
+}
+
+.icon-color-instagram {
+  color: var(--icon-color-instagram);
 }
 
 .testimonials-cards {
