@@ -7,7 +7,6 @@
 
 html {
   scroll-padding-top: 230px;
-
 }
 
 .navbar {
@@ -17,7 +16,6 @@ html {
 .text-darkblue {
   color: darkblue;
 }
-
 
 .bg-darkblue {
   background-color: darkblue;
@@ -63,11 +61,6 @@ html {
 
 .icon-color-instagram {
   color: var(--icon-color-instagram);
-}
-
-.testimonials-cards {
-  height: 200px;
-  text-align: center;
 }
 
 .bg-darkblue {
