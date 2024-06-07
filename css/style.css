@@ -3,6 +3,10 @@
   --submit-button-background-color: rgb(28, 173, 94);
 }
 
+html {
+  scroll-padding-top: 105px;
+}
+
 .navbar {
   background-color: transparent;
   transition: background-color 0.5s ease; /* CSS-transitie voor achtergrondkleur met 0.5 seconden duur */
