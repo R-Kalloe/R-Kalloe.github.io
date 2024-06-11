@@ -18,6 +18,27 @@ html {
   color: darkblue;
 }
 
+.image-container {
+  position: relative;
+}
+.image-container img {
+  width: 100%;
+  height: auto;
+}
+.text-center-overlay {
+  position: absolute;
+  top: 25%;
+  letter-spacing: 0.1rem;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+}
+
+.text-shadow {
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Lichte zwarte text-shadow */
+}
+
 .bg-darkblue {
   background-color: darkblue;
 }
