@@ -1,0 +1,112 @@
+body {
+
+    background: rgb(34, 75, 195);
+    background: linear-gradient(0deg, rgba(34, 75, 195, 1) 0%, rgba(45, 253, 142, 1) 100%);
+    margin: 0;
+    padding: 0;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+
+.go-back-btn {
+    margin-left: 20px;
+    width: 50px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: 30px;
+    background-color: rgb(80, 103, 126);
+    color: white;
+    box-shadow: 3px 3px rgb(107, 139, 170);
+}
+
+.Button1 {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.head-text {
+    text-align: center;
+    color: white;
+    font-size: 50px;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.mainHeader {
+    text-align: center;
+    color: white;
+    font-size: 50px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+#restart-button {
+    color: white;
+    font-size: 30px;
+    border-color: white;
+    text-align: center;
+    float: right 100px;
+    margin: auto;
+    justify-content: center;
+}
+
+#restart-button {
+    background-color: #858d96;
+
+}
+
+.btnField {
+    margin: auto;
+    text-align: center;
+}
+
+.cellContainer {
+    font-family: 'Courier New', Courier, monospace;
+    width: 600px;
+    height: 550px;
+    margin: 5% 34%;
+    color: #fff;
+    border: 6px solid #2c3e50;
+    border-radius: 15px;
+
+    display: grid;
+    grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+}
+
+.cell {
+    border: 6px solid #2c3e50;
+    border-radius: 2px;
+    font-family: Helvetica;
+    font-weight: bold;
+    font-size: 4em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cell:hover {
+    background-color: #e1e2e469;
+}
+
+#status-text {
+    text-align: center;
+    color: white;
+    font-size: 30px;
+}
+
+.restart-area {
+    text-align: center;
+    width: 300px;
+    margin-left: 800px;
+    border-radius: 10px;
+    font-size: 30px;
+    background-color: rgb(80, 103, 126);
+    color: white;
+    box-shadow: 5px 5px rgb(107, 139, 170);
+
+}
+
+.restart-area:hover {
+    background-color: rgb(58, 76, 94);
+    box-shadow: 5px 5px rgb(43, 56, 70);
+}

@@ -1,0 +1,267 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    background: radial-gradient(circle, rgb(17, 100, 82) 50%, rgb(51, 50, 56) 98%);
+    margin-top: 100px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+
+.title {
+    color: rgb(79, 98, 99);
+    text-align: center;
+    margin-bottom: 20px;
+    margin: auto;
+    font-size: 60px;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 1px #a8a0a0,
+        1px 2px 1px #2f7caf,
+        1px 3px 1px #3e5869,
+        1px 4px 1px #3e5869,
+        1px 5px 1px #3e5869,
+        1px 6px 1px #3e5869,
+        1px 7px 1px #3e5869,
+        1px 8px 1px #3e5869,
+        1px 9px 1px#3e5869,
+        1px 10px 1px #3e5869,
+        1px 18px 6px rgba(16, 16, 16, 0.4),
+        1px 22px 10px rgba(16, 16, 16, 0.2),
+        1px 25px 35px rgba(16, 16, 16, 0.2),
+        1px 30px 60px rgba(16, 16, 16, 0.4);
+
+}
+
+.information {
+    color: rgb(212, 204, 204);
+    margin: 0 auto;
+    font-size: 30px;
+
+}
+
+.player-info {
+    max-width: 800px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: auto auto;
+
+}
+
+.player {
+    background-color: black;
+    width: max-content;
+    height: max-content;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.name {
+    color: greenyellow;
+    ;
+    font-weight: 700;
+}
+
+#score {
+
+    color: greenyellow;
+    font-weight: 700;
+}
+
+#timer {
+    background-color: black;
+    width: max-content;
+    height: max-content;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+    align-items: center;
+    padding: 10px;
+}
+
+#celebration {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#celebration img {
+    margin-bottom: 10px;
+}
+
+.gefeliciteerd {
+    font-size: 22px;
+    color: whitesmoke;
+
+}
+
+.score-ele {
+    background-color: black;
+    width: max-content;
+    height: max-content;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+    align-items: center;
+    padding: 10px;
+}
+
+#container {
+
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: minmax(170px auto);
+    background-image: url(/IMG/grass.jpg);
+    background-size: cover;
+    justify-content: center;
+    align-content: center;
+    border: 3px solid rgb(53, 51, 51);
+    border-radius: 25px;
+    padding-bottom: 10px;
+
+}
+
+#container div {
+    width: 200px;
+    height: 170px;
+    background-image: url(/IMG/pipe.png);
+    background-size: cover;
+
+
+}
+
+#container div img {
+    width: 190px;
+    height: 110px;
+    cursor: pointer;
+    margin: 0;
+    padding: 0;
+
+
+}
+
+.start-btn {
+    color: rgb(17, 17, 16);
+    font-size: 20px;
+    font-family: fantasy;
+    height: fit-content;
+    width: fit-content;
+    padding: 15px;
+    text-align: center;
+    border-radius: 10px;
+    margin: 0 auto;
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    cursor: pointer;
+    box-shadow: 2px 3px 4px black;
+    background-color: rgb(74, 119, 122);
+}
+
+.start-btn:hover {
+    background-color: rgb(187, 185, 185);
+}
+
+.start-btn:active {
+    background-color: rgb(109, 165, 71);
+}
+
+
+/* For telefon and tablet */
+
+@media screen and (max-width: 800px) {
+
+
+    .title {
+        color: rgb(34, 143, 22);
+        text-align: center;
+        margin: auto;
+        font-size: 60px;
+
+    }
+
+    body {
+        background-color: rgb(112, 87, 111);
+        margin-top: 100px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        text-align: center;
+    }
+
+
+    #container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto;
+        background-image: url(/IMG/grass.jpg);
+        background-size: cover;
+        border: 3px solid rgb(53, 51, 51);
+        border-radius: 25px;
+        box-shadow: 2px 2px 22px 10px;
+        width: 100%;
+
+
+    }
+
+    #container div {
+        background-image: url(/IMG/pipe.png);
+        background-size: cover;
+
+
+    }
+
+    #container div img {
+        cursor: pointer;
+        margin: 0;
+        padding: 0;
+
+
+    }
+
+}
+
+
+/* For devices above 800px*/
+@media screen and (min-width: 800px) {
+    #container {
+        max-width: 1000px;
+        max-height: 1000px;
+        margin: auto;
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-template-rows: minmax(170px auto);
+        background-image: url(/IMG/grass.jpg);
+        background-size: cover;
+        justify-content: center;
+        align-content: center;
+        border: 3px solid rgb(53, 51, 51);
+        border-radius: 25px;
+        box-shadow: 2px 2px 22px 10px;
+    }
+
+    .information {
+        color: rgb(212, 204, 204);
+        margin: 0 auto;
+        margin-top: 32px;
+        max-width: 1000px;
+
+    }
+
+    .player,
+    .score-ele {
+        font-size: 30px;
+    }
+}

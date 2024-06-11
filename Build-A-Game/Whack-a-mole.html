@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Whack a Mole</title>
+    <link rel="stylesheet" href="../Build-A-Game/css/Whack-a-mole.css" />
+  </head>
+
+  <body>
+    <h1 class="title">Welkom bij <br />"Whack-a-Mole"!</h1>
+    <hr />
+    <div class="wrapper">
+      <p class="information">
+        In dit spel ben jij de speler die de uitdaging aangaat om zo veel
+        mogelijk punten te verdienen door op de mol te slaan. Elke keer dat je
+        de mol raakt, verdien je 15 punten. Maar wees voorzichtig, want als je
+        mist, verlies je 10 punten. Je hebt een tijdslimiet van 5 minuten om het
+        gewenste aantal punten (500) te behalen en de ronde te winnen.
+      </p>
+    </div>
+
+    <div class="player-info">
+      <p class="player">
+        Player:
+        <span class="name"></span>
+      </p>
+      <p class="score-ele">Score: <span id="score"></span></p>
+      <p id="timer">Timer: 5:00</p>
+      <div id="celebration" style="display: none">
+        <img src="/IMG/DCT.gif" alt="Confetti" width="100" height="100" />
+        <p class="gefeliciteerd">Gefeliciteerd! Je hebt 500 punten behaald!</p>
+      </div>
+    </div>
+
+    <div id="container"></div>
+    <button class="start-btn">Start</button>
+    <script src="../Build-A-Game/js/Whack-a-mole.js"></script>
+  </body>
+</html>

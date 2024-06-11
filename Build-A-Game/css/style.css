@@ -1,0 +1,216 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.background-image {
+  height: 100vh;
+  background: rgb(34, 75, 195);
+  background-image: linear-gradient(0deg,
+      rgba(34, 75, 195, 1) 0%,
+      rgba(45, 253, 142, 1) 100%);
+}
+
+.logo-position {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo {
+  position: absolute;
+  top: 6%;
+  
+  animation: floatingLogo 5s ease-in-out infinite;
+}
+
+.go-back-button {
+  position: absolute;
+  top: 3%;
+  left: 2%;
+  width: 120px;
+  height: 40px;
+  text-decoration: none;
+  font-size: x-large;
+  text-align: center;
+}
+
+#first-game-name {
+  position: absolute;
+  top: 40%;
+  left: 13.2%;
+  font-size: xx-large;
+  animation: textColorAnimation 8s ease-in-out infinite;
+  text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4),
+    0px 8px 13px rgba(0, 0, 0, 0.1),
+    0px 18px 23px rgba(0, 0, 0, 0.1);
+}
+
+.game-1-image {
+  position: absolute;
+  height: 370px;
+  width: 370px;
+  border: 2.5px solid black;
+  border-radius: 25px;
+  top: 45%;
+  left: 8%;
+  box-shadow: 0 0 20px #d30808;
+
+}
+
+.play-game-1 {
+  position: absolute;
+  top: 88%;
+  left: 11.3%;
+  height: 55px;
+  width: 250px;
+  background-color: rgb(148, 228, 148);
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 0 20px #eee;
+  transition: 0.5s;
+  font-size: x-large;
+}
+
+.play-game-1:hover {
+  box-shadow: 0 0 20px #540d0d;
+}
+
+.play-game-1:active {
+  background-color: rgb(12, 74, 95);
+  box-shadow: 0 0 20px #eee;
+}
+
+#second-game-name {
+  position: absolute;
+  top: 40%;
+  left: 45%;
+  font-size: xx-large;
+  animation: textColorAnimation 8s ease-in-out infinite;
+  text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4),
+    0px 8px 13px rgba(0, 0, 0, 0.1),
+    0px 18px 23px rgba(0, 0, 0, 0.1);
+}
+
+.game-2-image {
+  position: absolute;
+  height: 370px;
+  width: 370px;
+  border: 2.5px solid black;
+  border-radius: 25px;
+  top: 45%;
+  left: 41%;
+  box-shadow: 0 0 20px #d30808;
+}
+
+.play-game-2 {
+  position: absolute;
+  top: 88%;
+  left: 44.2%;
+  height: 55px;
+  width: 250px;
+  background-color: rgb(148, 228, 148);
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 0 20px #eee;
+  transition: 0.5s;
+  font-size: x-large;
+}
+
+.play-game-2:hover {
+  box-shadow: 0 0 20px #540d0d;
+}
+
+.play-game-2:active {
+  background-color: rgb(12, 74, 95);
+  box-shadow: 0 0 20px #eee;
+}
+
+#third-game-name {
+  position: absolute;
+  top: 40%;
+  left: 78%;
+  font-size: xx-large;
+  animation: textColorAnimation 8s ease-in-out infinite;
+  text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4),
+    0px 8px 13px rgba(0, 0, 0, 0.1),
+    0px 18px 23px rgba(0, 0, 0, 0.1);
+}
+
+.game-3-image {
+  position: absolute;
+  height: 370px;
+  width: 370px;
+  border: 2.5px solid black;
+  border-radius: 25px;
+  top: 45%;
+  left: 73%;
+  box-shadow: 0 0 20px #d30808;
+
+}
+
+.play-game-3 {
+  position: absolute;
+  top: 88%;
+  left: 76.4%;
+  height: 55px;
+  width: 250px;
+  background-color: rgb(148, 228, 148);
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 0 20px #eee;
+  transition: 0.5s;
+  font-size: x-large;
+}
+
+.play-game-3:hover {
+  box-shadow: 0 0 20px #540d0d;
+}
+
+.play-game-3:active {
+  background-color: rgb(12, 74, 95);
+  box-shadow: 0 0 20px #eee;
+}
+
+@keyframes floatingLogo {
+  /* Code that will style the floating animation */
+  0% {
+    transform: translate(0, 0px);
+    filter: drop-shadow(10px 10px 10px rgb(58, 31, 112));
+  }
+
+  50% {
+    transform: translate(0, 60px);
+    filter: drop-shadow(10px 10px 10px rgb(47, 204, 231));
+  }
+
+  100% {
+    transform: translate(0, 0px);
+    filter: drop-shadow(10px 10px 10px rgb(58, 31, 112));
+  }
+}
+@keyframes textColorAnimation {
+  0% {
+    color: lightcoral;
+  }
+
+  25% {
+    color: lightsalmon;
+  }
+
+  50% {
+    color: lightyellow;
+  }
+
+  75% {
+    color: yellow;
+  }
+
+  100% {
+    color: lightcoral;
+  }
+}
