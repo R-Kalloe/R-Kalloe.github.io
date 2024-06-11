@@ -1,8 +1,15 @@
 :root {
-  --background-color-darkblue: rgb(1, 8, 105);
-  --submit-button-background-color: rgb(28, 173, 94);
+  --border-bottom-color: rgb(128, 128, 128);
+  --title-color: rgb(0, 0, 139);
+  --second-title-color: rgb(265, 265, 265);
+  --title-text-shadow: rgb(0, 0, 0, 0.5);
   --icon-color-github: rgb(78, 12, 78);
   --icon-color-instagram: rgb(141, 32, 141);
+  --border-color-black: rgb(0,0,0);
+  --background-color-darkblue: rgb(0, 0, 139);
+  --cta-text-color: rgb(255, 255, 255);
+  --cta-border-color: rgb(255, 255, 255);
+  --submit-button-background-color: rgb(28, 173, 94);
 }
 
 html {
@@ -12,10 +19,12 @@ html {
 
 .navbar {
   background-color: transparent;
-  transition: background-color 0.5s ease; /* CSS-transitie voor achtergrondkleur met 0.5 seconden duur */
+  transition: background-color 0.5s ease;
+  animation: fade-in 0.5s;
 }
-.text-darkblue {
-  color: darkblue;
+
+.title-color {
+  color: var(--title-color);
 }
 
 .image-container {
@@ -31,20 +40,23 @@ html {
   letter-spacing: 0.1rem;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: white;
   text-align: center;
+  animation: fade-in 1.8s;
+}
+
+.text-center-overlay-p {
+  position: absolute;
+  top: 30%;
+  letter-spacing: 0.1rem;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: var(--second-title-color);
+  animation: fade-in 2.5s;
 }
 
 .text-shadow {
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Lichte zwarte text-shadow */
-}
-
-.bg-darkblue {
-  background-color: darkblue;
-}
-
-.bg-lightgreen {
-  background-color: rgb(114, 231, 192);
+  text-shadow: 1px 1px 2px var(--title-text-shadow); /* Lichte zwarte text-shadow */
 }
 
 .btn-hero {
@@ -54,11 +66,11 @@ html {
 }
 
 .border-bottom {
-  border-bottom: 1px solid grey;
+  border-bottom: 1px solid var(--border-bottom-color);
 }
 
 .border {
-  border: 2px solid black;
+  border: 2px solid var(--border-color-black);
 }
 
 .nav-top {
@@ -97,10 +109,17 @@ html {
   width: 160px;
   height: 40px;
   background-color: transparent;
-  border: 3px solid white;
-  color: white;
-  font-weight: bold;
+  border: 2px solid var(--cta-border-color);
+  color: var(--cta-text-color);
+  font-weight: 500;
   border-radius: 3px;
+}
+
+.btn-cta:hover {
+  width: 165px;
+  height: 42px;
+  transition: 0.2s;
+  font-weight: 600;
 }
 
 .form-submit-btn {
@@ -108,4 +127,14 @@ html {
   height: 38px;
   border-radius: 5px;
   background-color: var(--submit-button-background-color);
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0%;
+  }
+
+  to {
+    opacity: 100%;
+  }
 }
