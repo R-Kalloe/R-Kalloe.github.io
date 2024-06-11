@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hoger Lager</title>
+    <link rel="stylesheet" href="css/play.css" />
+    <script defer src="js/play.js"></script>
+    <!-- Added the favicon -->
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="image/higher-lower-credits.png"
+    />
+  </head>
+
+  <body>
+    <!-- Added the background music -->
+    <audio
+      id="background-music"
+      autoplay
+      src="music/Higher-Lower-Background-Music.mp3"
+      loop="true"
+    ></audio>
+    <div class="bg-image"></div>
+    <!--Added class to style the background image-->
+    <header>
+      <div class="logo">
+        <!-- Added class to style the div of the logo -->
+        <!-- Image class to style logo and logo animation -->
+        <img
+          class="game-logo floating"
+          src="image/higher-lower-logo.png"
+          alt="Logo of the Higher Lower game"
+        />
+      </div>
+      <!-- Music mute/unmute button -->
+      <div>
+        <button id="music-button">🔇</button>
+      </div>
+      <!-- Blurred class to blur every element when the 'start game' button is available -->
+      <!-- Higher Lower main text  -->
+      <div id="higher-lower">Higher Lower</div>
+      <!-- two buttons so you can navigate to the homepage by clicking on the higher and lower -->
+      <div>
+        <button id="higher-lower-navigate-button"></button>
+      </div>
+      <!--Player and computer text, both have own sections-->
+      <div class="blurred" id="player">Player</div>
+      <div class="blurred" id="computer">Computer</div>
+    </header>
+    <main>
+      <div>
+        <!-- Start the game button -->
+        <button class="blurred" id="start-button">Start the game</button>
+      </div>
+      <!-- Image for start button -->
+      <div>
+        <img
+          id="arrow-to-startbutton"
+          class="floating2"
+          src="image/Arrow-below.png"
+          alt="Arrow that points towards the start button"
+        />
+      </div>
+      <!-- Classes for player and computer dice -->
+      <div class="blurred" id="player-dice"></div>
+      <div class="blurred" id="computer-dice"></div>
+      <div class="player-section">
+        <!-- Throw dice button for the player -->
+        <button class="throw-button">Throw the dice</button>
+      </div>
+      <!-- Player and computer credits -->
+      <div>
+        <img
+          id="player-credits-image"
+          class="blurred"
+          src="image/Higher-Lower-Credits.png"
+          alt="Higher Lower credits image for player"
+        />
+      </div>
+      <div class="blurred" id="player-credits">Credits</div>
+      <select
+        name="dropdown-player-credits"
+        id="dropdown-player-credits"
+        class="blurred"
+      ></select>
+      <div>
+        <img
+          id="computer-credits-image"
+          class="blurred"
+          src="image/Higher-Lower-Credits.png"
+          alt="Higher Lower credits image for computer"
+        />
+      </div>
+      <div class="blurred" id="computer-credits">Credits</div>
+      <div class="blurred" id="computer-credits-stake">Stake:</div>
+      <div>
+        <!-- Class for player and computer dices, dices are shown with an image and both has 2 dices -->
+        <div id="player-dices">
+          <img class="player-dice-1" src="" alt="First player dice" />
+          <img class="player-dice-2" src="" alt="Second player dice" />
+        </div>
+        <div id="computer-dices">
+          <img class="computer-dice-1" src="" alt="First computer dice" />
+          <img class="computer-dice-2" src="" alt="Second computer dice" />
+        </div>
+        <!-- Player and computer count so the total score can be calculated -->
+        <div id="computer-count">
+          <p></p>
+        </div>
+        <div id="player-count">
+          <p>
+            <!-- Amount from player dices, paragraph is getting filled due to innerHTML -->
+          </p>
+        </div>
+        <!-- Higher button to make the guess if the computer is going to throw higher than you -->
+        <button id="higher-button">Higher</button>
+      </div>
+      <!-- Text that will apear in place of the higher button when the player chosed higher -->
+      <div class="chose">
+        <p>You chose</p>
+      </div>
+      <div id="higher">
+        <p>Higher!</p>
+      </div>
+      <div>
+        <!-- Lower button to make the guess if the computer is going to throw lower than you -->
+        <button id="lower-button">Lower</button>
+      </div>
+      <!-- Text that will apear in place of the higher button when the player chosed lower -->
+      <div class="chose">
+        <p>You chose</p>
+      </div>
+      <div id="lower">
+        <p>Lower!</p>
+      </div>
+      <!-- Result when the player or computers wins, when the player lost and when a draw is the result -->
+      <div id="win">
+        <h2>Player wins!</h2>
+      </div>
+      <div id="draw">
+        <h2></h2>
+      </div>
+      <div id="lose">
+        <h2></h2>
+      </div>
+      <!-- Text that wil appear above the higher and lower buttons -->
+      <div id="would-you-choose">
+        <p>Would you choose</p>
+      </div>
+      <!-- Text that will appear between the higher and lower buttons -->
+      <div id="text-between-buttons">
+        <h2>OR</h2>
+      </div>
+      <div>
+        <!-- The 'next round' button, to play the next round and threw again -->
+        <button id="next-round">Next Round</button>
+      </div>
+      <div>
+        <button id="play-again">Play Again!</button>
+      </div>
+      <div>
+        <button id="score-history">Score history</button>
+      </div>
+    </main>
+    <footer>
+      <!-- A simple and regular ID for footer -->
+      <div id="footer">
+        <p>Rowesh Kalloe &copy;</p>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,773 @@
+* {
+  /* Code that will be runned for every element */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Times New Roman", Times, serif;
+}
+
+body,
+html {
+  height: 100vh;
+  overflow: hidden;
+}
+
+.blurred {
+  /* Code that will give a simple blur to elements which has this class */
+  filter: blur(5px);
+  transition: 1.5s;
+}
+
+.bg-image {
+  /* Background image of the play page */
+  background-image: url(../image/dices-background.jpg);
+  filter: blur(10px);
+  -webkit-filter: blur(10px);
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#music-button {
+  position: absolute;
+  background: transparent;
+  top: 2%;
+  right: 2%;
+  border: none;
+  font-size: 45px;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+#music-button:hover {
+  font-size: 50px;
+  filter: drop-shadow(5px 5px 5px rgb(8, 180, 126));
+}
+
+#music-button:active {
+  filter: drop-shadow(5px 5px 5px rgb(50, 7, 135));
+}
+
+#higher-lower {
+  /* Code that styles the Higher Lower text in the top center of the page */
+  font-size: 41px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  position: absolute;
+  top: 6%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 18%;
+  padding: 20px;
+  text-align: center;
+  color: lightcoral;
+  -webkit-text-stroke: 0.3vw lightcoral;
+  text-transform: uppercase;
+}
+
+#higher-lower-navigate-button {
+  position: absolute;
+  top: 1.71%;
+  left: 45.7%;
+  height: 86.5px;
+  width: 172px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+#player {
+  /* Code that styles the player text for the player section */
+  font-size: 35px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-style: italic;
+  position: absolute;
+  top: 15%;
+  left: 20.6%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 18%;
+  text-align: center;
+  color: whitesmoke;
+  -webkit-text-stroke: 0.2vw whitesmoke;
+  text-transform: uppercase;
+}
+
+#computer {
+  /* Code that styles the computer text for the player section */
+  font-size: 35px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-style: italic;
+  position: absolute;
+  top: 15%;
+  right: 5%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 18%;
+  text-align: center;
+  color: whitesmoke;
+  -webkit-text-stroke: 0.2vw whitesmoke;
+  text-transform: uppercase;
+}
+
+#player-credits {
+  /* Code that styles the player credits for the player section */
+  background: transparent;
+  font-size: 30px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-style: italic;
+  position: absolute;
+  font-weight: bold;
+  top: 70%;
+  left: 15.5%;
+  color: rgb(189, 189, 40);
+}
+
+#player-credits-image {
+  position: absolute;
+  top: 74%;
+  max-width: 45px;
+  left: 18.5%;
+}
+
+#dropdown-player-credits {
+  background: transparent;
+  position: absolute;
+  border: 1.5px solid whitesmoke;
+  font-size: x-large;
+  color: red;
+  height: 35px;
+  width: 100px;
+  transition: 0.2s;
+  box-shadow: 0 0 20px #eee;
+  border-radius: 5px;
+  top: 80%;
+  left: 17.2%;
+  cursor: pointer;
+}
+
+#dropdown-player-credits:hover {
+  box-shadow: 0 0 20px #e8e803;
+}
+
+#dropdown-player-credits:active {
+  box-shadow: 0 0 20px #090586;
+}
+
+#computer-credits {
+  /* Code that styles the player credits for the computer section */
+  background: transparent;
+  font-size: 30px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-style: italic;
+  position: absolute;
+  font-weight: bold;
+  top: 70%;
+  right: 18.2%;
+  color: rgb(189, 189, 40);
+}
+
+#computer-credits-stake {
+  position: absolute;
+  background: transparent;
+  font-size: 25px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-style: italic;
+  font-weight: bold;
+  top: 80%;
+  left: 74%;
+  color: rgb(189, 189, 40);
+  display: none;
+}
+
+#computer-credits-image {
+  position: absolute;
+  top: 74%;
+  max-width: 45px;
+  left: 75.8%;
+}
+
+.game-logo {
+  /* Code that will style the game logo */
+  max-width: 13.5%;
+  background-color: transparent;
+  color: white;
+  font-weight: bold;
+  position: absolute;
+  top: 81%;
+  left: 43.2%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 35%;
+  padding: 20px;
+  text-align: center;
+  filter: drop-shadow(10px 10px 10px rgb(58, 31, 112));
+}
+
+.floating {
+  /* Code that will determine the animation */
+  animation-name: floating;
+  animation-duration: 4.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+#start-button {
+  /* Code that will style the start button */
+  background-color: transparent;
+  text-shadow: 100ch;
+  font-size: xx-large;
+  font-family: "Times New Roman", Times, serif;
+  cursor: pointer;
+  color: white;
+  border-radius: 10px;
+  border: 2px solid blanchedalmond;
+  box-shadow: 0 0 20px #eee;
+  position: absolute;
+  top: 60%;
+  height: 60px;
+  left: 50%;
+  width: 210px;
+  transform: translate(-50%, -50%);
+  filter: drop-shadow(10px 10px 10px rgb(255, 30, 232));
+}
+
+#start-button:active {
+  /* Code that will be runned when the start button is clicked */
+  background-color: rgba(0, 0, 0, 0.205);
+  box-shadow: 5px 5px (color);
+  width: 120px;
+}
+
+#start-button:hover {
+  /* Code that will be runned when the start button gets hovered */
+  width: 220px;
+  height: 60px;
+}
+
+#arrow-to-startbutton {
+  position: absolute;
+  top: 25%;
+  max-width: 220px;
+  left: 44.3%;
+  filter: drop-shadow(10px 10px 10px rgb(116, 16, 16));
+}
+
+.floating2 {
+  /* Code that will determine the animation */
+  animation-name: floating2;
+  animation-duration: 4.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in;
+}
+
+.throw-button {
+  /* Code that styles the throw button */
+  background-color: transparent;
+  text-shadow: 100ch;
+  font-size: x-large;
+  cursor: pointer;
+  color: white;
+  border-radius: 22px;
+  box-shadow: 0 0 20px #eee;
+  border: 2px solid blanchedalmond;
+  position: absolute;
+  top: 60%;
+  height: 80px;
+  left: 50%;
+  width: 180px;
+  transform: translate(-50%, -50%);
+  transition: 0.5s;
+  filter: drop-shadow(10px 10px 10px black);
+  display: none;
+}
+
+.throw-button:active {
+  /* Code that will be runned when te throw button is clicked */
+  background-color: rgba(0, 0, 0, 0.205);
+  box-shadow: 5px 5px (color);
+}
+
+.throw-button:hover {
+  /* Code that will be runned when the throw button gets hovered */
+  width: 190px;
+  height: 88px;
+}
+
+.throw-button:disabled {
+  /* Code that will be runned when the throw button is disabled */
+  background-image: linear-gradient(
+    to right,
+    #003973 0%,
+    #e5e5be 51%,
+    #003973 100%
+  );
+  text-align: center;
+  transition: 0.5s;
+  background-size: 200%;
+  box-shadow: 0 0 20px #eee;
+  border-radius: 22px;
+  display: block;
+}
+
+.player-section {
+  /* Code that will style the player section */
+  background: transparent;
+  text-shadow: 100ch;
+  color: white;
+  position: absolute;
+  top: 60%;
+  height: 40px;
+  left: 20%;
+  width: 150px;
+  transform: translate(-50%, -50%);
+  filter: drop-shadow(10px 10px 10px black);
+}
+
+#player-dices {
+  /* Code that will style the player dices and change the position */
+  position: absolute;
+  top: 20%;
+  left: 14%;
+  display: none;
+}
+
+.player-dice-1 {
+  /* Code that will change the width of the first player dice */
+  width: 120px;
+}
+
+.player-dice-2 {
+  /* Code that will change the width of the second player dice */
+  width: 120px;
+}
+
+#computer-dices {
+  /* Code that will style the computer dices and change the position */
+  position: absolute;
+  top: 20%;
+  right: 16.5%;
+  display: none;
+}
+
+.computer-dice-1 {
+  /* Code that will change the width of the first computer dice */
+  width: 120px;
+}
+
+.computer-dice-2 {
+  /* Code that will change the width of the second computer dice */
+  width: 120px;
+}
+
+#player-count {
+  /* Code that will style the total player score */
+  background: transparent;
+  position: absolute;
+  font-size: x-large;
+  color: whitesmoke;
+  top: 35%;
+  width: 150px;
+  left: 15.5%;
+  text-transform: uppercase;
+  width: 200px;
+  display: none;
+}
+
+#computer-count {
+  /* Code that will style the total computer score */
+  background: transparent;
+  position: absolute;
+  font-size: x-large;
+  color: whitesmoke;
+  top: 35%;
+  width: 150px;
+  right: 18.6%;
+  text-transform: uppercase;
+  display: none;
+}
+
+#higher-button {
+  /* Code that will style the higher button */
+  background: transparent;
+  position: absolute;
+  font-size: xx-large;
+  color: whitesmoke;
+  border: 2px solid blanchedalmond;
+  border-radius: 22px;
+  box-shadow: 0 0 20px #eee;
+  cursor: pointer;
+  width: 140px;
+  top: 25%;
+  right: 50%;
+  height: 5%;
+  transition: 0.5s;
+  display: none;
+  transform: translate(-50%, -50%);
+  filter: drop-shadow(10px 10px 10px black);
+}
+
+#higher-button:active {
+  /* Code that will be runned when the higher button is clicked */
+  background-color: rgba(0, 0, 0, 0.205);
+  box-shadow: 5px 5px (color);
+}
+
+#higher-button:hover {
+  /* Code that will be runned when the higher button gets hovered */
+  width: 150px;
+  height: 50px;
+}
+
+#lower-button {
+  /* Code that will be runned when the lower button is clicked */
+  background: transparent;
+  position: absolute;
+  font-size: xx-large;
+  color: whitesmoke;
+  border: 2px solid blanchedalmond;
+  border-radius: 22px;
+  box-shadow: 0 0 20px #eee;
+  cursor: pointer;
+  width: 140px;
+  top: 25%;
+  left: 56%;
+  height: 5%;
+  transition: 0.5s;
+  display: none;
+  transform: translate(-50%, -50%);
+  filter: drop-shadow(10px 10px 10px black);
+}
+
+#lower-button:active {
+  /* Code that will be runned when the lower button is clicked */
+  background-color: rgba(0, 0, 0, 0.205);
+  box-shadow: 5px 5px (color);
+}
+
+#lower-button:hover {
+  /* Code that will be runned when the lower button gets hovered */
+  width: 150px;
+  height: 50px;
+}
+
+#would-you-choose {
+  /* Code that will style the 'would you choose' text above the higher and lower buttons */
+  position: absolute;
+  top: 16.5%;
+  right: 43.7%;
+  color: wheat;
+  text-transform: uppercase;
+  font-size: x-large;
+  display: none;
+  animation: textColorAnimation1 5s ease-in-out infinite;
+}
+
+@keyframes textColorAnimation1 {
+  /* The color animation for textColorAnimation1 */
+  0% {
+    color: wheat;
+  }
+
+  50% {
+    color: yellow;
+  }
+
+  75% {
+    color: yellowgreen;
+  }
+
+  100% {
+    color: wheat;
+  }
+}
+
+#text-between-buttons {
+  /* Code that will style the text between the higher and lower buttons */
+  position: absolute;
+  top: 23%;
+  left: 48.1%;
+  font-size: 22px;
+  font-style: italic;
+  color: lightcoral;
+  font-weight: bolder;
+  filter: drop-shadow(1px 1px 1px black);
+  letter-spacing: 0.05vw;
+  animation: textColorAnimation2 10s ease-in-out infinite;
+  display: none;
+}
+
+.chose {
+  /* Code that will style the 'you chose' text which is appearing after the choise */
+  position: absolute;
+  top: 16.5%;
+  right: 45.5%;
+  color: wheat;
+  text-transform: uppercase;
+  font-size: 30px;
+  animation: textColorAnimation2 5s ease-in-out infinite;
+  display: none;
+}
+
+#higher {
+  /* Code that style the text that will appear after the player chosed higher */
+  position: absolute;
+  top: 23%;
+  left: 47.1%;
+  font-size: 28px;
+  text-transform: uppercase;
+  animation: textColorAnimation3 5s ease-in-out infinite;
+  display: none;
+}
+
+#lower {
+  /* Code that style the text that will appear after the player chosed lower */
+  position: absolute;
+  top: 23%;
+  left: 47.3%;
+  font-size: 28px;
+  text-transform: uppercase;
+  animation: textColorAnimation3 5s ease-in-out infinite;
+  display: none;
+}
+
+#win {
+  /* Code that will style the text, which will appear after the player won */
+  position: absolute;
+  top: 45%;
+  right: 42.8%;
+  font-size: x-large;
+  text-transform: uppercase;
+  color: whitesmoke;
+  animation: flip 2s infinite;
+  animation-delay: calc(0.2s * var(--i));
+  display: none;
+}
+
+#draw {
+  /* Code that will style the text, which will appear when the result is a draw */
+  position: absolute;
+  top: 45%;
+  right: 42.5%;
+  font-size: xx-large;
+  text-transform: uppercase;
+  color: whitesmoke;
+  animation: flip 2s infinite;
+  animation-delay: calc(0.2s * var(--i));
+  display: none;
+}
+
+#lose {
+  /* Code that will style the text, which will appear after the player lossed, and the computer won*/
+
+  position: absolute;
+  top: 45%;
+  right: 42.5%;
+  font-size: xx-large;
+  text-transform: uppercase;
+  color: whitesmoke;
+  animation: flip 2s infinite;
+  animation-delay: calc(0.2s * var(--i));
+  display: none;
+}
+
+@keyframes flip {
+  /* Code that determines how the animation will be runned */
+  0%,
+  80% {
+    transform: rotateY(360deg);
+  }
+}
+
+#next-round {
+  /* Code that styles the next round button */
+  background-color: transparent;
+  position: absolute;
+  top: 60%;
+  right: 45.2%;
+  font-size: xx-large;
+  cursor: pointer;
+  border: 2px solid blanchedalmond;
+  border-radius: 15px;
+  height: 60px;
+  width: 180px;
+  transition: 0.5s;
+  color: white;
+  box-shadow: 0 0 20px #eee;
+  display: none;
+}
+
+#next-round:hover {
+  /* Code that will be runned when the next round button gets hovered */
+  width: 185px;
+}
+
+#next-round:active {
+  /* Code that will be runned when the next round button gets clicked */
+  background-color: rgba(0, 0, 0, 0.205);
+  box-shadow: 5px 5px (color);
+}
+
+#play-again {
+  /* Code that styles the play again button */
+  background-color: transparent;
+  position: absolute;
+  top: 60%;
+  right: 45.2%;
+  font-size: xx-large;
+  cursor: pointer;
+  border: 2px solid blanchedalmond;
+  border-radius: 15px;
+  height: 60px;
+  width: 180px;
+  transition: 0.5s;
+  color: white;
+  box-shadow: 0 0 20px #eee;
+  display: none;
+}
+
+#play-again:hover {
+  /* Code that will be runned when the play again button gets hovered */
+  width: 185px;
+}
+
+#play-again:active {
+  /* Code that will be runned when the play again button gets clicked */
+  background-color: rgba(0, 0, 0, 0.205);
+  box-shadow: 5px 5px (color);
+}
+
+#score-history {
+  background-color: transparent;
+  position: absolute;
+  top: 76%;
+  right: 46%;
+  font-size: x-large;
+  cursor: pointer;
+  border: 2px solid blanchedalmond;
+  border-radius: 15px;
+  color: white;
+  transition: 0.1s;
+  box-shadow: 0 0 20px #31ae37;
+  width: 8%;
+  height: 5%;
+  display: none;
+}
+
+#score-history:hover {
+  width: 160px;
+}
+
+#score-history:active {
+  background-color: rgba(7, 166, 251, 0.205);
+  box-shadow: 5px 5px (color);
+}
+
+#footer {
+  /* Code that will change the footer */
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  font-weight: bolder;
+  font-size: larger;
+  filter: drop-shadow(8px 8px 8px);
+}
+
+@keyframes textColorAnimation2 {
+  /* Code for textColorAnimation2 */
+  0% {
+    color: lightcoral;
+  }
+
+  20% {
+    color: lightgoldenrodyellow;
+  }
+
+  30% {
+    color: lightgreen;
+  }
+
+  50% {
+    color: lightskyblue;
+  }
+
+  70% {
+    color: lightseagreen;
+  }
+
+  100% {
+    color: lightcoral;
+  }
+}
+
+@keyframes textColorAnimation3 {
+  /* Code for textColorAnimation3 */
+  0% {
+    color: lightcoral;
+  }
+
+  20% {
+    color: aqua;
+  }
+
+  40% {
+    color: greenyellow;
+  }
+
+  60% {
+    color: yellow;
+  }
+
+  80% {
+    color: pink;
+  }
+
+  100% {
+    color: lightcoral;
+  }
+}
+
+@keyframes floating {
+  /* Code that will style the animation of the floating game logo */
+  0% {
+    transform: translate(0, 0px);
+    filter: drop-shadow(10px 10px 10px rgb(58, 31, 112));
+  }
+
+  25% {
+    filter: drop-shadow(10px 10px 10px rgb(161, 178, 8));
+  }
+
+  50% {
+    transform: translate(0, 60px);
+    filter: drop-shadow(10px 10px 10px rgb(40, 152, 17));
+  }
+
+  75% {
+    filter: drop-shadow(10px 10px 10px rgb(141, 10, 146));
+  }
+
+  100% {
+    transform: translate(0, 0px);
+    filter: drop-shadow(10px 10px 10px rgb(58, 31, 112));
+  }
+}
+
+@keyframes floating2 {
+  /* Code that will style the animation of the floating game logo */
+  0% {
+    transform: translate(0, 0px);
+    filter: drop-shadow(10px 10px 10px rgb(116, 16, 16));
+  }
+
+  50% {
+    transform: translate(0, 60px);
+    filter: drop-shadow(10px 10px 10px rgb(65, 110, 3));
+  }
+
+  100% {
+    transform: translate(0, 0px);
+    filter: drop-shadow(10px 10px 10px rgb(116, 16, 16));
+  }
+}

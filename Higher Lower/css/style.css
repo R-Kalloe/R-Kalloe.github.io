@@ -1,0 +1,174 @@
+body,
+html {
+  height: 99vh;
+}
+
+* {
+  /* Code that will be runned for every element */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.bg-image {
+  /* Code for the background image */
+  background-image: url(../image/Achtergrond-main-page.jpg);
+  filter: blur(10%);
+  -webkit-filter: blur(10px);
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.game-logo {
+  /* Code that styles the game logo */
+  background-color: transparent;
+  color: white;
+  font-weight: bold;
+  position: absolute;
+  top: 10%;
+  left: 34%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 35%;
+  padding: 20px;
+  text-align: center;
+  filter: drop-shadow(10px 10px 10px rgb(58, 31, 112));
+  cursor: pointer;
+}
+
+.floating {
+  /* Code that makes the floating animation and styles the animation */
+  animation-name: floating;
+  animation-duration: 4.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+.bg-text {
+  /* Code that styles the bg text */
+  background-color: transparent;
+  color: white;
+  font-weight: bold;
+  border: 2px solid rgb(57, 4, 126);
+  border-radius: 75px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 80%;
+  box-shadow: 0 0 20px #eee;
+  padding: 20px;
+  text-align: center;
+}
+
+.welcome-message {
+  /* Code that styles the welcomes message */
+  font-weight: bolder;
+  color: aliceblue;
+  filter: drop-shadow(10px 10px 10px rgb(191, 238, 21));
+  display: inline-block;
+  animation: waving 2.5s infinite;
+}
+
+.instruction-message {
+  /* Code that styles the instruction message */
+  font-weight: lighter;
+  font-size: 22px;
+  text-shadow: 10ch;
+  color: beige;
+  filter: drop-shadow(10px 10px 10px rgb(191, 238, 21));
+  animation: waving 2.5s infinite;
+}
+
+#play-button {
+  /* Code that styles the play button */
+  background-color: transparent;
+  text-shadow: 100ch;
+  border: 2.5px solid rgb(200, 149, 77);
+  border-radius: 50px;
+  color: white;
+  box-shadow: 0 0 20px #eee;
+  font-weight: bold;
+  font-size: 24px;
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  height: 70px;
+  width: 180px;
+  letter-spacing: 0.1vw;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  margin: auto;
+  padding: 1%;
+  transition: 0.12s;
+  text-decoration: none;
+  text-shadow: -1px 1px 0 #801919, 1px 1px 0 #300eed, 1px -1px 0 #18bbdc,
+    -1px -1px 0 #ffb300;
+}
+
+#play-button:active {
+  /* Code that will be runned when the playbutton gets clicked */
+  background-color: rgba(0, 0, 0, 0.205);
+  width: 180px;
+}
+
+#play-button:hover {
+  /* Code that will be runned when the playbutton gets hovered */
+  width: 240px;
+  height: 70px;
+}
+
+#footer {
+  /* Code that styles the footer */
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: transparent;
+  text-align: center;
+  font-weight: bolder;
+  font-size: larger;
+}
+
+@keyframes floating {
+  /* Code that will style the floating animation */
+  0% {
+    transform: translate(0, 0px);
+    filter: drop-shadow(10px 10px 10px rgb(58, 31, 112));
+  }
+
+  25% {
+    filter: drop-shadow(10px 10px 10px rgb(161, 178, 8));
+  }
+
+  50% {
+    transform: translate(0, 60px);
+    filter: drop-shadow(10px 10px 10px rgb(40, 152, 17));
+  }
+
+  75% {
+    filter: drop-shadow(10px 10px 10px rgb(141, 10, 146));
+  }
+
+  100% {
+    transform: translate(0, 0px);
+    filter: drop-shadow(10px 10px 10px rgb(58, 31, 112));
+  }
+}
+
+@keyframes waving {
+  /* Code that will style the animation for the text */
+  0%,
+  40%,
+  100% {
+    transform: translateY(0);
+  }
+
+  20% {
+    transform: translateY(-5px);
+  }
+}
