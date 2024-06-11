@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contactpagina</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/contact-page.css" />
+    <script defer src="js/main.js"></script>
+    <script defer src="js/contact-page.js"></script>
+    <link rel="icon" type="image/x-icon" href="image/favicon/favicon.png" />
+  </head>
+  <body>
+    <header>
+      <!-- An image element in a div to show the logo -->
+      <div>
+        <img
+          class="logo"
+          src="image/logo/logo.png"
+          alt="The logo of RK-Racing"
+        />
+      </div>
+      <!-- A div with the class navigation which represents a navigation -->
+      <div class="navigation">
+        <!-- All the links that are necessary, which are connected with all the pages the user can navigate to -->
+        <a href="index.html">Home</a>
+        <a href="team-page.html">Ons team</a>
+        <a href="events-page.html">Evenementen</a>
+        <a href="sponsors-page.html">Sponsoren</a>
+        <a href="webshop-page.html">Webshop</a>
+        <a href="contact-page.html">Contact</a>
+      </div>
+    </header>
+    <main>
+      <div class="wrapper">
+        <!-- This is a div called the vertical-line, which represents the vertical line at the right of the screen -->
+        <div class="vertical-line"></div>
+        <div class="team-information blur">
+          <h1 id="page-title">Contact</h1>
+          <hr id="title-hr" />
+          <p id="information-text">
+            Heeft u interesse in een samenwerking (sponsorschap) met RK-Racing,
+            wilt u een vraag stellen of wilt u een leuk berichtje sturen? Aarzel
+            niet en vul het contactformulier hier beneden in, wij proberen
+            binnen 24 uur te reageren op uw bericht!
+          </p>
+          <hr id="text-hr" />
+        </div>
+        <div class="contact-form">
+          <form action="">
+            <input
+              type="text"
+              minlength="2"
+              maxlength="25"
+              id="first-name"
+              placeholder="Naam..."
+              required
+            />
+            <input
+              type="text"
+              minlength="2"
+              maxlength="25"
+              id="second-name"
+              placeholder="Achternaam..."
+              required
+            />
+            <br />
+            <input
+              type="text"
+              minlength="5"
+              maxlength="30"
+              id="home-adres"
+              placeholder="Adres..."
+              required
+            />
+            <input
+              type="text"
+              minlength="6"
+              maxlength="6"
+              id="zipcode"
+              placeholder="Postcode..."
+              required
+            />
+            <br />
+            <input
+              type="text"
+              minlength="10"
+              maxlength="40"
+              id="email-adres"
+              placeholder="E-mailadres..."
+              required
+            />
+            <br />
+            <textarea
+              minlength="40"
+              maxlength="500"
+              id="message"
+              placeholder="Bericht...."
+              required
+            ></textarea>
+            <br />
+            <div class="send-button-position">
+              <input type="submit" id="send-button" value="Verstuur" />
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="slideshow-title">
+        <h1>Onze Foto's</h1>
+      </div>
+      <!-- This two div elements are for the first slideshow -->
+      <div class="slideshow-position">
+        <div class="slideshow">
+          <!-- This are all the images for the slideshow that will be shown alternately -->
+          <img
+            src="image/slideshow/IMG_1982.JPG"
+            alt="This is an image which appears in the slideshow"
+          />
+          <img
+            src="image/slideshow/jens_news.jpg"
+            alt="This is an image which appears in the slideshow"
+          />
+          <img
+            src="image/slideshow/kz2-2.jpg"
+            alt="This is an image which appears in the slideshow"
+          />
+          <img
+            src="image/slideshow/rotax-max-1.webp"
+            alt="This is an image which appears in the slideshow"
+          />
+          <img
+            src="image/slideshow/Versteeg AV Producties-216.jpg"
+            alt="This is an image which appears in the slideshow"
+          />
+        </div>
+      </div>
+      <div class="second-slideshow-position">
+        <div class="second-slideshow">
+          <!-- This are all the images for the slideshow that will be shown alternately -->
+          <img
+            src="image/slideshow/rotax-max-2.jpeg"
+            alt="This is an image which appears in the slideshow"
+          />
+          <img
+            src="image/slideshow/Versteeg AV Producties-222.jpg"
+            alt="This is an image which appears in the slideshow"
+          />
+          <img
+            src="image/slideshow/kz2-rain.jpg"
+            alt="This is an image which appears in the slideshow"
+          />
+          <img
+            src="image/slideshow/IMG_1984.JPG"
+            alt="This is an image which appears in the slideshow"
+          />
+          <img
+            src="image/slideshow/kz2-1.jpg"
+            alt="This is an image which appears in the slideshow"
+          />
+        </div>
+      </div>
+    </main>
+    <footer class="blur">
+      <div class="footer-sponsor-images">
+        <img
+          class="footer-sponsor tenict"
+          src="image/sponsors/tenict_logo.png"
+          alt="This is an image which appears in the footer, representing the sponsors of RK-Racing"
+        />
+        <img
+          class="footer-sponsor automotive"
+          src="image/sponsors/automotive-logo.png"
+          alt="This is an image which appears in the footer, representing the sponsors of RK-Racing"
+        />
+        <img
+          class="footer-sponsor oracle"
+          src="image/sponsors/oracle-logo.png"
+          alt="This is an image which appears in the footer, representing the sponsors of RK-Racing"
+        />
+        <img
+          class="footer-sponsor ziggo"
+          src="image/sponsors/ziggo-logo.png"
+          alt="This is an image which appears in the footer, representing the sponsors of RK-Racing"
+        />
+      </div>
+      <div class="footer-vertical-line"></div>
+
+      <div class="footer-logo-image">
+        <img
+          class="footer-logo"
+          src="image/logo/logo.png"
+          alt="The logo of RK-racing"
+        />
+      </div>
+      <div class="footer-navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="team-page.html">Ons team</a></li>
+          <li><a href="events-page.html">Evenementen</a></li>
+          <li><a href="sponsors-page.html">Sponsoren</a></li>
+          <li><a href="webshop-page.html">Webshop</a></li>
+          <li><a href="contact-page.html">Contact</a></li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,142 @@
+/* This is the root where all the color variables are noted */
+:root {
+  --header-background-color: rgb(82, 135, 226);
+  --navigation-link-color: rgb(4, 4, 12);
+  --navigation-link-hover-line-color: rgb(220, 236, 252);
+  --navigation-link-active-color: rgb(4, 4, 12);
+  --vertical-line-color: rgb(20, 55, 116);
+  --button-up-active-background-color: rgb(141, 137, 137);
+  --title-color: rgb(124, 31, 31);
+  --hr-ruler-color-green: rgb(161, 238, 17);
+  --hr-ruler-color-blue: rgb(30, 47, 206);
+  --vertical-line-color-black: rgb(0, 0, 0);
+  --order-button-hover-color: rgb(240, 240, 240);
+  --footer-background-color: rgb(46, 46, 94);
+  --footer-vertical-line-color: rgb(255, 255, 255);
+  --footer-navigation-ul-color: rgb(77, 97, 109);
+  --footer-navigation-link-color: rgb(233, 228, 228);
+  --footer-navigation-link-hover-color: rgb(124, 31, 31);
+  --footer-navigation-link-active-color: rgb(56, 88, 146);
+}
+
+main {
+  margin-bottom: 0px;
+}
+
+.team-information {
+  position: absolute;
+  text-align: center;
+  right: 33%;
+  top: 20%;
+  font-size: 28px;
+  height: 450px;
+  width: 700px;
+}
+
+#page-title {
+  color: var(--title-color);
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+#title-hr {
+  position: absolute;
+  width: 380px;
+  left: 22%;
+  margin-top: 5px;
+  border: 1px solid var(--hr-ruler-color-green);
+}
+
+#information-text {
+  margin-top: 25px;
+}
+
+#text-hr {
+  position: absolute;
+  width: 380px;
+  left: 22%;
+  margin-top: 15px;
+  border: 1px solid var(--hr-ruler-color-green);
+}
+
+.vertical-line {
+  min-height: 1100px;
+}
+
+/* CSS for the products */
+
+.products-container {
+  width: 615px;
+  position: relative;
+  left: 570px;
+}
+
+.product-shirt,
+.product-hoodie {
+  height: 230px;
+  margin-bottom: 20px;
+}
+
+.product-title,
+.product-title-hr,
+.product-image,
+.product-vertical-line,
+.product-information,
+.product-order,
+.product-end-ruler {
+  position: relative;
+  margin: 0;
+  top: 350px;
+}
+
+.product-title {
+  font-size: 35px;
+  left: 230px;
+}
+
+.product-title-hr {
+  border: 1px solid var(--hr-ruler-color-blue);
+  width: 222px;
+  left: 230px;
+}
+
+.product-image {
+  height: 160px;
+  max-width: 175px;
+  top: 325px;
+}
+
+.product-vertical-line {
+  border-right: 1px solid var(--vertical-line-color-black);
+  min-height: 150px;
+  top: 190px;
+  right: 430px;
+}
+
+.product-information {
+  max-width: 360px;
+  font-size: 22px;
+  left: 230px;
+  top: 50px;
+}
+
+.product-order {
+  height: 40px;
+  top: 80px;
+  left: 505px;
+}
+
+.product-order:hover {
+  background-color: var(--order-button-hover-color);
+  transition: 0.2s;
+}
+
+.product-end-ruler {
+  border: 1px solid var(--hr-ruler-color-green);
+  width: 550px;
+  top: 90px;
+}
+
+footer {
+  position: absolute;
+  top: 130%;
+}

@@ -1,0 +1,167 @@
+/* This is the root where all the color variables are noted */
+:root {
+  --header-background-color: rgb(82, 135, 226);
+  --navigation-link-color: rgb(4, 4, 12);
+  --navigation-link-hover-line-color: rgb(220, 236, 252);
+  --navigation-link-active-color: rgb(4, 4, 12);
+  --vertical-line-color: rgb(20, 55, 116);
+  --title-color: rgb(124, 31, 31);
+  --hr-ruler-color-green: rgb(161, 238, 17);
+  --hr-ruler-color-blue: rgb(30, 47, 206);
+  --vertical-line-color-black: rgb(0, 0, 0);
+  --input-field-background-color: rgb(176, 238, 238);
+  --input-field-border-hover-color: rgb(147, 197, 214);
+  --input-field-border-active-color: rgb(127, 127, 231);
+  --footer-background-color: rgb(46, 46, 94);
+  --footer-vertical-line-color: rgb(255, 255, 255);
+  --footer-navigation-ul-color: rgb(77, 97, 109);
+  --footer-navigation-link-color: rgb(233, 228, 228);
+  --footer-navigation-link-hover-color: rgb(124, 31, 31);
+  --footer-navigation-link-active-color: rgb(56, 88, 146);
+}
+
+.vertical-line {
+  min-height: 770px;
+}
+
+.team-information {
+  position: absolute;
+  text-align: center;
+  right: 33%;
+  top: 20%;
+  font-size: 28px;
+  height: 450px;
+  width: 700px;
+}
+
+#page-title {
+  color: var(--title-color);
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+#title-hr {
+  position: absolute;
+  width: 380px;
+  left: 22%;
+  margin-top: 5px;
+  border: 1px solid var(--hr-ruler-color-green);
+}
+
+#information-text {
+  margin-top: 25px;
+}
+
+#text-hr {
+  position: absolute;
+  width: 380px;
+  left: 22%;
+  margin-top: 15px;
+  border: 1px solid var(--hr-ruler-color-green);
+}
+
+.contact-form {
+  position: absolute;
+  top: 50%;
+  left: 37%;
+}
+
+form > input {
+  height: 40px;
+  font-size: large;
+  border-radius: 20px;
+  background-color: var(--input-field-background-color);
+  border: none;
+  width: 229px;
+  width: auto;
+  transition: 0.01s;
+  padding-left: 10px;
+  margin-bottom: 5px;
+}
+
+form input:focus {
+  outline: none;
+}
+
+form input:hover {
+  border: 1px solid var(--input-field-border-hover-color);
+}
+
+form input:active {
+  border: 1px solid var(--input-field-border-active-color);
+}
+
+form input::placeholder {
+  padding-left: 10px;
+}
+
+#email-adres,
+#message {
+  min-width: 441px;
+}
+
+#home-adres {
+  width: 260px;
+}
+
+#zipcode {
+  width: 199px;
+}
+
+#email-adres {
+  min-width: 459px;
+}
+
+#message {
+  min-width: 459px;
+  max-width: 459px;
+  min-height: 40px;
+  height: auto;
+  height: 40px;
+  font-size: large;
+  border-radius: 20px;
+  background-color: var(--input-field-background-color);
+  border: none;
+  width: 229px;
+  width: auto;
+  transition: 0.01s;
+  padding-left: 18px;
+  padding-top: 7px;
+  margin-bottom: 5px;
+  font-family: Verdana;
+}
+
+#message:focus {
+  outline: none;
+}
+
+#message:hover {
+  border: 1px solid var(--input-field-border-hover-color);
+}
+
+#message:active {
+  border: 1px solid var(--input-field-border-active-color);
+}
+
+.send-button-position {
+  margin: 0px auto;
+  max-width: 160px;
+}
+
+#send-button {
+  height: 40px;
+  width: 150px;
+  margin-top: 20px;
+  font-size: large;
+  border-radius: 20px;
+  background-color: var(--input-field-background-color);
+  border: none;
+  transition: 0.5;
+}
+
+#send-button:hover {
+  border: 1px solid var(--input-field-border-hover-color);
+}
+
+#send-button:active {
+  border: 1px solid var(--input-field-border-active-color);
+}

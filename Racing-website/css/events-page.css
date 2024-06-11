@@ -1,0 +1,190 @@
+/* This is the root where all the color variables are noted */
+:root {
+  --header-background-color: rgb(82, 135, 226);
+  --navigation-link-color: rgb(4, 4, 12);
+  --navigation-link-hover-line-color: rgb(220, 236, 252);
+  --navigation-link-active-color: rgb(4, 4, 12);
+  --vertical-line-color: rgb(20, 55, 116);
+  --button-up-border-color: rgb(83, 59, 216);
+  --button-up-background-color: rgb(255, 140, 0);
+  --button-up-text-color: rgb(240, 240, 240);
+  --button-up-box-shadow: rgb(0, 0, 0);
+  --button-up-active-background-color: rgb(141, 137, 137);
+  --title-color: rgb(124, 31, 31);
+  --hr-ruler-color-green: rgb(161, 238, 17);
+  --hr-ruler-color-blue: rgb(30, 47, 206);
+  --vertical-line-color-black: rgb(0, 0, 0);
+  --event-image-box-shadow: rgb(180, 59, 59);
+  --footer-background-color: rgb(46, 46, 94);
+  --footer-vertical-line-color: rgb(255, 255, 255);
+  --footer-navigation-ul-color: rgb(77, 97, 109);
+  --footer-navigation-link-color: rgb(233, 228, 228);
+  --footer-navigation-link-hover-color: rgb(124, 31, 31);
+  --footer-navigation-link-active-color: rgb(56, 88, 146);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.vertical-line {
+  min-height: 4430px;
+}
+
+.team-information {
+  position: absolute;
+  text-align: center;
+  right: 33%;
+  top: 20%;
+  font-size: 28px;
+  height: 450px;
+  width: 700px;
+}
+
+#page-title {
+  color: var(--title-color);
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+#title-hr {
+  position: absolute;
+  width: 380px;
+  left: 22%;
+  margin-top: 5px;
+  border: 1px solid var(--hr-ruler-color-green);
+}
+
+#information-text {
+  margin-top: 25px;
+}
+
+#text-hr {
+  position: absolute;
+  width: 380px;
+  left: 22%;
+  margin-top: 15px;
+  border: 1px solid var(--hr-ruler-color-green);
+}
+
+.button-up-position {
+  position: relative;
+  left: 1720px;
+  top: 730px;
+}
+
+.button-up {
+  position: fixed;
+  font-size: xx-large;
+  text-decoration: none;
+  border: 2px solid var(--button-up-border-color);
+  background-color: var(--button-up-background-color);
+  color: var(--button-up-text-color);
+  border-radius: 50%;
+  height: 60px;
+  width: 60px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  transition: 0.5s;
+  z-index: 1;
+}
+
+.button-up:hover {
+  height: 62px;
+  width: 62px;
+  box-shadow: 1px 2px 10px var(--button-up-box-shadow);
+}
+
+.button-up:active {
+  background-color: var(--button-up-active-background-color);
+  transition: 0.1s;
+}
+
+/* All the CSS required for the event divs */
+.events-container {
+  height: 660px;
+  width: 800px;
+  position: absolute;
+  top: 50%;
+  left: 22%;
+}
+
+.event-1,
+.event-2,
+.event-3,
+.event-4,
+.event-5,
+.event-6,
+.event-7,
+.event-8,
+.event-9,
+.event-10,
+.event-11,
+.event-12,
+.event-13 {
+  height: 280px;
+  animation: fadeIn linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
+}
+
+.event-name {
+  position: relative;
+  top: -10px;
+  left: 375px;
+  font-size: 40px;
+}
+
+.event-title-ruler {
+  border: 1px solid var(--hr-ruler-color-blue);
+  width: 222px;
+  position: relative;
+  top: -7px;
+  left: 380px;
+}
+
+.event-image {
+  min-height: 200px;
+  max-height: 200px;
+  min-width: 355px;
+  max-width: 355px;
+  box-shadow: 1px 4px 15px var(--event-image-box-shadow);
+}
+
+.event-vertical-line {
+  border-right: 1px solid var(--vertical-line-color-black);
+  position: relative;
+  right: 430px;
+  top: -198px;
+  min-height: 185px;
+}
+
+.event-information {
+  position: relative;
+  top: -382px;
+  left: 380px;
+  max-width: 417.7px;
+  font-size: 22px;
+}
+
+.event-end-ruler {
+  border: 1px solid var(--hr-ruler-color-green);
+  position: relative;
+  top: -355px;
+}
+
+footer {
+  position: absolute;
+  top: 500%;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 100;
+  }
+}
