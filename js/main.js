@@ -30,4 +30,11 @@ viewRacingWebsite.addEventListener("click", function () {
   window.open("Racing-website/index.html", "_blank");
 });
 
+document.addEventListener('DOMContentLoaded', () => {
+  const scrollButton = document.querySelector('#scroll-down');
+  scrollButton.addEventListener('click', () => {
+      window.scrollBy({ top: 750, left: 0});
+  });
+});
+
   
