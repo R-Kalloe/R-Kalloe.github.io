@@ -7,6 +7,25 @@ const port = 3000;
 
 app.use(cors());
 
+const express = require('express');
+const { exec } = require('child_process');
+
+app.get('/start-server', (req, res) => {
+    exec('node path/to/your/server.js', (error, stdout, stderr) => {
+        if (error) {
+            console.error(`Error starting server: ${error}`);
+            res.status(500).send('Error starting server');
+            return;
+        }
+        console.log(`Server started: ${stdout}`);
+        res.send('Server started successfully');
+    });
+});
+
+app.listen(port, () => {
+    console.log(`API listening at http://localhost:${port}`);
+});
+
 
 app.get("/shoes-dr-martins", (req, res) => {
   res.setHeader("Content-type", "application/json;charset=UTF-8");
