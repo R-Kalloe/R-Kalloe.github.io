@@ -1,0 +1,26 @@
+[
+  {
+    "title": "Blaze Safari",
+    "description": "Puma TRC BLAZE SAFARI - Sneakers laag.",
+    "colour": "Olijf",
+    "imageUrl": "https://img01.ztat.net/article/spp-media-p1/5d827ef485914e44b37182c2a243a14b/08ab7dd53072434fbf0bbe8be4ab3478.jpg?imwidth=1800&filter=packshot",
+    "price": 59.95,
+    "sizes": ["39", "40", "41"]
+  },
+  {
+    "title": "RS-X Candy",
+    "description": "Puma RS-X CANDY - Sneakers laag.",
+    "colour": "Wit",
+    "imageUrl": "https://img01.ztat.net/article/spp-media-p1/4b942fc0920d4f6dbcf684cbcf114a54/7a3d19a251d347669f34e74b5982dcf7.jpg?imwidth=1800&filter=packshot",
+    "price": 109.95,
+    "sizes": ["37", "38", "39"]
+  },
+  {
+    "title": "X Ray Speed",
+    "description": "Puma X RAY SPEED LITE - Sneakers laag.",
+    "colour": "Zwart/Wit",
+    "imageUrl": "https://img01.ztat.net/article/spp-media-p1/f47c4f8b7eb044af8cfea0f7147b29dc/098182b5e1d84fdcbc67271cdf14d5e0.jpg?imwidth=1800&filter=packshot",
+    "price": 65,
+    "sizes": ["40", "41", "42"]
+  }
+]

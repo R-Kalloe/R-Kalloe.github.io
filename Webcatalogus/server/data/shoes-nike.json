@@ -1,0 +1,26 @@
+[
+  {
+    "title": "Air Max 95",
+    "description": "Nike Sportswear AIR MAX 95 ESSENTIAL - Sneakers laag.",
+    "colour": "Zwart/Goud",
+    "imageUrl": "https://img01.ztat.net/article/spp-media-p1/112e9adc851949059402a27b38c9b4d1/c07b9c9b3a3b4300879407b973e432bc.jpg?imwidth=1800&filter=packshot",
+    "price": 189.95,
+    "sizes": ["40", "41", "42"]
+  },
+  {
+    "title": "Performance Revolution",
+    "description": "Nike Performance REVOLUTION 6 NN - Hardloopschoenen neutraal.",
+    "colour": "Zwart/Roze",
+    "imageUrl": "https://img01.ztat.net/article/spp-media-p1/512edc4aaec443c38e23de6881422126/9f8f6a865f274cef905d292323ee4b99.jpg?imwidth=1800&filter=packshot",
+    "price": 41.95,
+    "sizes": ["40", "41", "42"]
+  },
+  {
+    "title": "Phantom GX",
+    "description": "Nike Performance PHANTOM GX ACADEMY DF FG/MG.",
+    "colour": "Zwart",
+    "imageUrl": "https://img01.ztat.net/article/spp-media-p1/2e272a9862684bc4ae7973b7f209fd24/e377269928044c7a8346c13670fd5ee3.jpg?imwidth=1800&filter=packshot",
+    "price": 94.95,
+    "sizes": ["40", "41", "42"]
+  }
+]

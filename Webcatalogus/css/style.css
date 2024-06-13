@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial;
+}
+
+:root {
+  --header-background-color: rgb(0, 45, 179, 100);
+  --footer-background-color: rgb(192, 226, 226);
+  --mobile-navigation-background-color: rgb(211, 207, 248);
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(100px, auto);
+  grid-auto-rows: minmax(60px, auto);
+  gap: 5px;
+  grid-template-areas:
+    "hd"
+    "hd"
+    "main"
+    "main"
+    "main"
+    "main"
+    "main"
+    "main"
+    "main"
+    "main"
+    "main"
+    "main"
+    "main"
+    "main"
+    "main"
+    "main"
+    "ft";
+}
+
+header {
+  grid-area: hd;
+  background-color: var(--header-background-color);
+  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(13, 1fr);
+  font-size: xx-large;
+  grid-template-areas: "img img img img . . . nav nav nav nav nav nav";
+}
+
+.logo {
+  grid-area: img;
+  margin: 20px;
+}
+
+nav {
+  grid-area: nav;
+}
+
+nav a,
+.footer-nav {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  font-size: 32px;
+  transition: 0.4s;
+}
+
+nav a:hover {
+  font-size: 34px;
+}
+
+nav a:active {
+  font-size: 32px;
+  transition: 0.2s;
+}
+
+main {
+  grid-area: main;
+  /* background-color: rgb(240, 184, 177); */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: xx-large;
+}
+
+footer {
+  grid-area: ft;
+  background-color: var(--footer-background-color);
+  text-align: center;
+}
+
+footer p {
+  font-size: 50px;
+}
+
+.menu-icon,
+#menu-toggle {
+  display: none;
+}
+
+@keyframes opacity {
+  from {
+    opacity: 0%;
+  }
+
+  to {
+    opacity: 100%;
+  }
+}
+
+/* Media query for mobile phone (max 640px) */
+
+@media screen and (max-width: 640px) {
+  .menu-icon {
+    display: inline-block;
+    cursor: pointer;
+    margin-right: 20px;
+    font-size: 50px;
+    position: relative;
+    left: 280px;
+    top: -5px;
+  }
+
+  nav {
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: var(--mobile-navigation-background-color);
+    width: 80%;
+    z-index: 1;
+    animation: opacity 0.6s;
+    position: absolute;
+    top: 20px;
+  }
+
+  #menu-toggle:checked + label + nav {
+    display: flex;
+  }
+
+  nav img {
+    display: block;
+    width: 150px;
+  }
+}

@@ -1,0 +1,11 @@
+.card-container {
+    border: 1px solid black;
+    display: grid;
+    gap: 10px;
+    grid-template-areas: 1fr 1fr 1fr;
+}
+
+.card {
+    width: 300px;
+    object-fit: cover;
+}

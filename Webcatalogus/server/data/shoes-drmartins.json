@@ -1,0 +1,27 @@
+[
+  {
+    "title": "Dr Martens 1460",
+    "description": "Dr. Martens 1460 - Veterboots.",
+    "colour": "Zwart/Metallic Grijs",
+    "imageUrl": "https://img01.ztat.net/article/spp-media-p1/86e383dd16c54004a442b8089d881e25/9c69f10ca20f4d78b556e70fc2a1d0fb.jpg?imwidth=1800&filter=packshot",
+    "price": 49.95,
+    "sizes": ["34", "35", "36"]
+  },
+  {
+    "title": "Dr Marten Tarik",
+    "description": "Dr. Martens TARIK UNISEX - Veterboots.",
+    "colour": "Zwart",
+    "imageUrl": "https://img01.ztat.net/article/spp-media-p1/de6e4dd7576b4b908d63b0e31c1714d4/dadaada1d6fd4d0d8e7bd5207ecad601.jpg?imwidth=1800&filter=packshot",
+    "price": 89,
+    "0": 95,
+    "sizes": ["41", "42", "43"]
+  },
+  {
+    "title": "Dr Martens Pascal",
+    "description": "Dr. Martens 1460 PASCAL - Veterboots.",
+    "colour": "Regenboog",
+    "imageUrl": "https://img01.ztat.net/article/spp-media-p1/989c24b6ee6742acb0b9c44ecc646693/6382f6c4592d4ffd815eefa3602fac94.jpg?imwidth=1800&filter=packshot",
+    "price": 62.99,
+    "sizes": ["24", "25", "26"]
+  }
+]

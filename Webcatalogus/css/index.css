@@ -1,0 +1,121 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {}
+:root {
+    --header-background-color: rgb(0, 45, 179, 100);
+    --footer-background-color: rgb(192, 226, 226);
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(100px, auto);
+    grid-auto-rows: minmax(120px, auto);
+    gap: 5px;
+    grid-template-areas: 
+    "hd"
+    "main"
+    "main"
+    "main"
+    "main"
+    "main"
+    "main"
+    "ft"
+    "ft"
+    ;
+}
+
+header {
+    grid-area: hd;
+    background-color: var(--header-background-color);
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(13, 1fr);
+    font-size: xx-large;
+    grid-template-areas: 
+    "img img img img . . . . nav nav nav nav nav";
+}
+
+
+.logo {
+    grid-area: img;
+    margin: 20px;
+}
+
+nav{
+    grid-area: nav;
+}
+
+nav a,
+.footer-nav{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 32px;
+    transition: 0.4s;
+}
+
+nav a:hover {
+    font-size: 34px;
+}
+
+nav a:active {
+    font-size: 32px;
+    transition: 0.2s;
+}
+
+main{
+    grid-area: main;
+    margin-left: 10px;
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: max-content max-content max-content;
+    grid-template-areas: 
+"proA proB proC"
+    ;
+}
+footer {
+    grid-area: ft;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-areas: 
+    "name name name name . . . . . fnav fnav fnav"
+    ;
+    background-color: var(--footer-background-color);
+    font-size: xx-large;
+}
+
+footer p {
+    grid-area: name;
+    font-size: 50px;
+}
+
+.footer-nav {
+    grid-area: fnav;
+}
+.pro-one{
+    grid-area: proA;
+}
+.pro-two{
+    grid-area: proB;
+}
+.pro-three{
+    grid-area: proC;
+}
+.container{
+    background-color: gray;
+    width: max-content;
+    padding: 20px;
+    border-radius: 10px;
+}
+.more-btn{
+    text-decoration: none;
+    font-size: x-large;
+}
+.more-btn:hover{
+    color:rgb(218, 63, 63);
+    text-decoration: underline;
+}

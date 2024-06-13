@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  :root {
+    --page-name-color: rgb(192, 0, 0);
+    --page-name-ruler: rgb(89, 158, 36);
+    --page-description-ruler: rgb(129, 209, 137);
+    --card-image-shadow-color: rgba(8, 6, 6, 0.1);
+    --card-ruler: rgb(23, 44, 81);
+  }
+  
+  .wrapper {
+    display: grid;
+    grid-template-columns: repeat(100px, auto);
+    grid-auto-rows: minmax(120px, auto);
+    gap: 5px;
+    grid-template-areas: 
+    "hd"
+    "main"
+    "cg"
+    "cg"
+    "cg"
+    "cg"
+    "cg"
+    "ft"
+    ;
+}
+  
+header{
+  grid-area: hd;
+}
+
+  main{
+    grid-area: main;
+  }
+
+  footer{
+    grid-area: ft;
+  }
+
+  .cards-container-games {
+    grid-area: cg;
+    text-align: center;
+    height: auto;
+    width: 1100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+  }
+  
+  .card-style {
+    height: 400px;
+    width: 300px;
+    border-radius: 20px;
+    text-align: center;
+    position: relative;
+    margin-bottom: 100px;
+  }
+  
+  .card-title {
+    font-size: x-large;
+    margin-bottom: 5px;
+  }
+  
+  .card-description {
+    font-size: large;
+  }
+  
+  .listing {
+    display: flex;
+    grid-template-columns: repeat(200px, 1fr);
+    list-style: none;
+    gap: 100px;
+}
+
+.listing li {
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.listing li h2 {
+    background-color: var(--card-body-background-color);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin: 0px;
+}
+
+.listing .cta {
+    margin: auto;
+    border-top: 2px solid rgb(0, 0, 0);
+    padding: 10px;
+    text-align: center;
+}
+
+.listing .cta a {
+    text-align: none;
+    color: var(--card-button-color);
+    font-size: 30px;
+    text-decoration: none;
+}
+
+.listing .body {
+    padding: 10px;
+
+}
+
+.card-image{
+    height: 300px;
+    width: 350px;
+}
+  
+  .card-style img {
+    box-shadow: 0 5px 15px 5px var(--card-image-shadow-color);
+    height: 300px;
+    width: 300px;
+  }
+  
+  .end-ruler {
+    width: 300px;
+    margin-top: 20px;
+  }
+  
+  @media screen and (max-width: 640px) {
+    .logo {
+      height: 40px;
+    }
+    #page-name {
+      font-size: 25px;
+      position: relative;
+      right: 65px;
+    }
+  
+    .cards-container-games {
+      width: 500px;
+      position: relative;
+      right: 60px;
+    }
+  }
+  
+  @media screen and (min-width: 641px) and (max-width: 1024px) {
+  
+    
+    .cards-container-games {
+      width: 700px;
+      position: relative;
+      left: 15px;
+    }
+  }
+  

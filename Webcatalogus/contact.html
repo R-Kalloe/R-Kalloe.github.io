@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+    <link rel="stylesheet" href="css/contact.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script defer src="js/contact.js"></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <img
+          class="logo"
+          src="img/logo/kijkshop-logo.png"
+          alt="The logo of KIJKSHOP"
+        />
+        <input type="checkbox" id="menu-toggle" />
+        <label for="menu-toggle" class="menu-icon">&#9776;</label>
+        <nav>
+          <a href="index.html">Home</a>
+          <a href="categorie-games.html">Games</a>
+          <a href="categorie-shoes.html">Schoenen</a>
+          <a href="phones.html">Telefoons</a>
+          <a href="about-us.html">Over ons</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </header>
+      <main>
+        <div class="main-wrapper">
+        <h1 id="page-name">Contact</h1>
+        <hr id="page-name-ruler">
+        <div class="contact-form">
+          <form action="">
+            <input
+              type="text"
+              id="first-name"
+              minlength="2"
+              maxlength="25"
+              placeholder="Naam..."
+              required
+            />
+            <input
+              type="text"
+              id="second-name"
+              minlength="2"
+              maxlength="25"
+              placeholder="Achternaam..."
+              required
+            />
+            <br />
+            <input
+              type="text"
+              id="home-adres"
+              minlength="5"
+              maxlength="30"
+              placeholder="Adres..."
+              required
+            />
+            <input
+              type="text"
+              id="zipcode"
+              minlength="6"
+              maxlength="6"
+              placeholder="Postcode..."
+              required
+            />
+            <br />
+            <input
+              type="text"
+              id="email-adres"
+              minlength="10"
+              maxlength="40"
+              placeholder="E-mailadres..."
+              required
+            />
+            <br />
+            <textarea
+              id="message"
+              minlength="40"
+              maxlength="500"
+              placeholder="Bericht...."
+              required
+            ></textarea>
+            <br />
+            <div class="send-button-position">
+              <input type="submit" class="send-button" value="Verstuur" />
+            </div>
+          </form>
+        </div>
+        <div class="submit-button-popup">
+          <div class="popup">
+            <h2>Contactformulier is verstuurd!</h2>
+            <br />
+            <p>Bedankt, we nemen zo snel mogelijk contact met je op!</p>
+            <button class="close-popup">SLUIT</button>
+          </div>
+        </div>
+      </div>
+      </main>
+      <footer>
+        <p>&copy;KIJKSHOP 2024</p>
+      </footer>
+    </div>
+  </body>
+</html>
