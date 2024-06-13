@@ -11,7 +11,7 @@ const express = require('express');
 const { exec } = require('child_process');
 
 app.get('/start-server', (req, res) => {
-    exec('node path/to/your/server.js', (error, stdout, stderr) => {
+    exec('node ../Webcatalogus/server/index.js', (error, stdout, stderr) => {
         if (error) {
             console.error(`Error starting server: ${error}`);
             res.status(500).send('Error starting server');
