@@ -44,16 +44,17 @@ html {
   animation: fade-in 1.8s;
 }
 
+/* 
 .text-center-overlay-p {
   position: absolute;
-  top: 30%;
+  top: 48%;
   letter-spacing: 0.1rem;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
   color: var(--second-title-color);
   animation: fade-in 2.5s;
-}
+} */
 
 .text-shadow {
   text-shadow: 1px 1px 2px var(--title-text-shadow); /* Lichte zwarte text-shadow */
