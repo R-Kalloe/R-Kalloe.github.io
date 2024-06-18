@@ -38,10 +38,6 @@ viewWebcatalogus.addEventListener("click", function () {
   window.open("Webcatalogus/index.html", "_blank");
 });
 
-viewDashboard.addEventListener("click", function () {
-  alert("Dit project is helaas nog niet beschikbaar ");
-});
-
 //JavaScript waardoor de gebruiker die op de knop drukt met ID 'Scroll-down' 750px naar beneden wordt genavigeerd.
 document.addEventListener("DOMContentLoaded", () => {
   const scrollButton = document.querySelector("#scroll-down");
