@@ -10,6 +10,11 @@
   --cta-text-color: rgb(255, 255, 255);
   --cta-border-color: rgb(255, 255, 255);
   --submit-button-background-color: rgb(28, 173, 94);
+  --first-color: rgb(40, 178, 236);
+  --second-color: rgb(187, 212, 156);
+  --third-color: rgb(12, 4, 11);
+  --fourth-color: rgb(9, 23, 40);
+  --fifth-color: rgb(15, 3, 119);
 }
 
 html {
@@ -128,6 +133,22 @@ html {
   height: 38px;
   border-radius: 5px;
   background-color: var(--submit-button-background-color);
+}
+
+.first-color {
+  background-color: var(--first-color);
+}
+.second-color {
+  background-color: var(--second-color);
+}
+.third-color {
+  background-color: var(--third-color);
+}
+.fourth-color {
+  background-color: var(--fourth-color);
+}
+.fifth-color {
+  background-color: var(--fifth-color);
 }
 
 @keyframes fade-in {
