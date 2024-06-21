@@ -37,12 +37,14 @@ is geworden op het WK die gehouden is in Engeland! Na een harde crash in de eers
 </p></div>`;
 
 //News message 2
-newsMessageContainer.innerHTML += `<div class="auto-news-message-2"><img class="news-image" src="image/slideshow/IMG_1984.jpg" alt="An image of Rowesh Kalloe"></img><h2 id="news-message-title-2">
-  Rowesh Kalloe is 21 januari terug op Assen!
+newsMessageContainer.innerHTML += `<div class="auto-news-message-2"><img class="news-image" src="image/sponsors/ziggo-logo.png" alt="An image of Rowesh Kalloe"></img><h2 id="news-message-title-2">
+  Ziggo aangetrokken als nieuwe sponsor!
 </h2><hr id="news-message-title-hr-2">
 <p id="auto-news-message-text">
-In november 2023 mocht Rowesh zijn debuut maken in de Tillotson T4 series van Nederland bij Esmea Racing. Rowesh Kalloe keert deze week terug, wederom op Assen.
-Deze wedstrijd is live te volgen via YouTube, dus neem zeker een kijkje!
+              Wij zijn erg trots om aan te kondigen dat wij Ziggo als nieuwe
+              sponsor kunnen verwelkomen. RK-Racing en Ziggo zullen intensief
+              samenwerken en hopelijk verantwoordelijk zijn voor mooie winsten
+              die geboekt gaan worden met Ziggo op de overalls!
 </p></div>`;
 
 //Popup variables and logic for the second news message
