@@ -65,6 +65,10 @@ html {
   text-shadow: 1px 1px 2px var(--title-text-shadow); /* Lichte zwarte text-shadow */
 }
 
+.dashboard-logo {
+  width: 32%;
+}
+
 .btn-hero {
   padding: 10px;
   padding-left: 35px;
